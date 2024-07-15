@@ -18,7 +18,7 @@ class _SplashBodyState extends State<SplashBody>
     // TODO: implement initState
     super.initState();
     animationController =
-        AnimationController(vsync: this, duration: Duration(seconds: 4));
+        AnimationController(vsync: this, duration: Duration(seconds: 3));
 
     slidingAnimation = Tween<Offset>(begin: Offset(0, 7), end: Offset.zero)
         .animate(animationController);
@@ -31,7 +31,11 @@ class _SplashBodyState extends State<SplashBody>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image.asset(AssetsData.logo),
+        Image.asset(
+          AssetsData.logo,
+          width: 90,
+          height: 90,
+        ),
         Center(
             child: SlideTransition(
                 position: slidingAnimation,
