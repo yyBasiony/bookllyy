@@ -22,3 +22,4 @@ abstract class Styles {
 }
 
 const TextStyle textStyle = TextStyle();
+const KBackgroundColor=  Color(0xff100B20);

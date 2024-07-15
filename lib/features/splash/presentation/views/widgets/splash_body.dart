@@ -17,10 +17,14 @@ class _SplashBodyState extends State<SplashBody>
   void initState() {
     // TODO: implement initState
     super.initState();
+    animaton();
+  }
+
+  void animaton() {
     animationController =
         AnimationController(vsync: this, duration: Duration(seconds: 3));
 
-    slidingAnimation = Tween<Offset>(begin: Offset(0, 7), end: Offset.zero)
+    slidingAnimation = Tween<Offset>(begin: Offset(0, 3), end: Offset.zero)
         .animate(animationController);
     animationController.forward();
   }
@@ -31,17 +35,23 @@ class _SplashBodyState extends State<SplashBody>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image.asset(
-          AssetsData.logo,
-          width: 90,
-          height: 90,
+        Center(
+          child: Container(
+            width: 240,
+
+            child: Image.asset(
+              AssetsData.logo,
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 5,
         ),
         Center(
             child: SlideTransition(
                 position: slidingAnimation,
                 child: Text(
                   "Read Free Books",
-                  style: TextStyle(color: Colors.white),
                 )))
       ],
     );
