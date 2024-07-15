@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.montserratTextTheme(
           ThemeData.dark().textTheme,
         ),
-        scaffoldBackgroundColor: KBackgroundColor,
+        scaffoldBackgroundColor: BackgroundColor,
       ),
     );
   }

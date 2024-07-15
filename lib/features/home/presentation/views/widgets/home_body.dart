@@ -1,3 +1,4 @@
+import 'package:bookly/features/home/presentation/views/widgets/featured_list_view.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utlis/assets.dart';
 import '../../../../../core/utlis/styles.dart';
@@ -8,7 +9,7 @@ class Home_Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: KBackgroundColor,
+      color: BackgroundColor,
       child: Column(
         children: [
           Padding(
@@ -21,12 +22,10 @@ class Home_Body extends StatelessWidget {
                 ),
                 SizedBox(width: 145,),
                 Icon(Icons.search,size:30)
-
-
               ],
             ),
           ),
-
+          Featured_List_View(),
         ],
       ),
     );
