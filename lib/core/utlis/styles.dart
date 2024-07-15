@@ -19,7 +19,12 @@ abstract class Styles {
     fontSize: 16,
     fontWeight: FontWeight.w500,
   );
+
+  static const priceStyle = TextStyle(
+    fontWeight: FontWeight.w700,
+    fontSize: 20,
+  );
 }
 
 const TextStyle textStyle = TextStyle();
-const BackgroundColor=  Color(0xff100B20);
+const BackgroundColor = Color(0xff100B20);

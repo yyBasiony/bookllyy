@@ -1,7 +1,7 @@
-import 'package:bookly/features/home/presentation/views/widgets/featured_list_view.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utlis/assets.dart';
 import '../../../../../core/utlis/styles.dart';
+import 'featured_list_view.dart';
 
 class Home_Body extends StatelessWidget {
   const Home_Body({super.key});
@@ -21,7 +21,7 @@ class Home_Body extends StatelessWidget {
                   height: 18,
                 ),
                 SizedBox(width: 145,),
-                Icon(Icons.search,size:30)
+                Icon(Icons.search, size: 30),
               ],
             ),
           ),
