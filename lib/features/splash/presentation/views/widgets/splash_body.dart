@@ -1,6 +1,8 @@
 import 'package:bookly/core/utlis/assets.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../home/presentation/views/widgets/home_screen.dart';
+
 class SplashBody extends StatefulWidget {
   const SplashBody({super.key});
 
@@ -15,9 +17,20 @@ class _SplashBodyState extends State<SplashBody>
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     animaton();
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => Home_Screen()), // تأكد من وجود HomeScreen() بالشكل الصحيح
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
   }
 
   void animaton() {
@@ -37,8 +50,7 @@ class _SplashBodyState extends State<SplashBody>
       children: [
         Center(
           child: Container(
-            width: 240,
-
+            width: 200,
             child: Image.asset(
               AssetsData.logo,
             ),
@@ -48,12 +60,16 @@ class _SplashBodyState extends State<SplashBody>
           height: 5,
         ),
         Center(
-            child: SlideTransition(
-                position: slidingAnimation,
-                child: Text(
-                  "Read Free Books",
-                )))
+          child: SlideTransition(
+            position: slidingAnimation,
+            child: Text(
+              "Read Free Books",
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
       ],
     );
   }
 }
+
