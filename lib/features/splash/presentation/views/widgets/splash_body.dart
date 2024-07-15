@@ -1,4 +1,5 @@
 import 'package:bookly/core/utlis/assets.dart';
+import 'package:bookly/features/home/presentation/views/widgets/home_body.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../home/presentation/views/widgets/home_screen.dart';
@@ -22,7 +23,7 @@ class _SplashBodyState extends State<SplashBody>
     Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => Home_Screen()), // تأكد من وجود HomeScreen() بالشكل الصحيح
+        MaterialPageRoute(builder: (context) => Home_Body()), // تأكد من وجود HomeScreen() بالشكل الصحيح
       );
     });
   }
@@ -50,7 +51,7 @@ class _SplashBodyState extends State<SplashBody>
       children: [
         Center(
           child: Container(
-            width: 200,
+            width:180,
             child: Image.asset(
               AssetsData.logo,
             ),
