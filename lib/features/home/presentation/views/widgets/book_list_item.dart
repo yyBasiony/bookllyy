@@ -26,7 +26,7 @@ class BookListItem extends StatelessWidget {
         children: [
           Image.asset(
             AssetsData.testImage, // Placeholder image
-            height: 85,
+            height: 120,
           ),
           SizedBox(width: 8),
           Expanded(
@@ -34,12 +34,16 @@ class BookListItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(title, style: Styles.textStyle18),
+                SizedBox(height: 5),
+
                 Text(author, style: Styles.textStyle14),
+                SizedBox(height: 5),
+
                 Row(
                   children: [
                     Text(price, style: Styles.pricestyle),
-                    SizedBox(width: 24),
-                    Icon(Icons.star, color: Colors.yellow, size: 16),
+                    SizedBox(width: 60),
+                    Icon(Icons.star, color: Colors.yellow, size: 22),
                     SizedBox(width: 2),
                     Text(rating.toString(), style: Styles.ratingCount),
                     SizedBox(width: 2),

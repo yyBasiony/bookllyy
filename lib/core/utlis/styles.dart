@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 
 abstract class Styles {
   static const textStyle18 = TextStyle(
-    fontSize: 18,
+    fontSize: 24,
     fontWeight: FontWeight.w800,
     color: Colors.white,
     decoration: TextDecoration.none,
@@ -27,13 +27,13 @@ abstract class Styles {
     decoration: TextDecoration.none,
   );
   static const ratingCount = TextStyle(
-    fontSize: 12,
+    fontSize: 18,
     fontWeight: FontWeight.w200,
     color: Colors.white,
     decoration: TextDecoration.none,
   );
   static const pricestyle = TextStyle(
-    fontSize: 16,
+    fontSize: 24,
     fontWeight: FontWeight.w900,
     color: Colors.white,
     decoration: TextDecoration.none,
