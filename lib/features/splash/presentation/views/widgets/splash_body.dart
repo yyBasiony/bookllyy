@@ -51,7 +51,7 @@ class _SplashBodyState extends State<SplashBody>
       children: [
         Center(
           child: Container(
-            width:180,
+            width:240,
             child: Image.asset(
               AssetsData.logo,
             ),
