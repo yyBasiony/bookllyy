@@ -1,4 +1,4 @@
-class SaleInfo {
+ class SaleInfo {
   String? country;
   String? saleability;
   bool? isEbook;

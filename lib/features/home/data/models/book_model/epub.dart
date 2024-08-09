@@ -1,4 +1,4 @@
-class Epub {
+ class Epub {
   bool? isAvailable;
 
   Epub({this.isAvailable});

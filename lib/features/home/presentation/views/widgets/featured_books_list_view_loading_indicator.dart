@@ -1,4 +1,4 @@
-import 'package:bookly/Features/home/presentation/views/widgets/custom_book_image_loading_indicator.dart';
+ import 'package:bookly/Features/home/presentation/views/widgets/custom_book_image_loading_indicator.dart';
 import 'package:bookly/core/widgets/custom_fading_widget.dart';
 import 'package:flutter/material.dart';
 

@@ -1,4 +1,4 @@
-import 'package:bloc/bloc.dart';
+ import 'package:bloc/bloc.dart';
 import 'package:bookly/Features/home/domain/entities/book_entity.dart';
 import 'package:bookly/Features/home/domain/use_cases/fetch_newest_books_use_case.dart';
 import 'package:meta/meta.dart';

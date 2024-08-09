@@ -1,4 +1,4 @@
-import 'package:bookly/Features/home/presentation/views/widgets/book_rating.dart';
+ import 'package:bookly/Features/home/presentation/views/widgets/book_rating.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/featured_list_view.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/similar_books_list_view.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/similar_books_section.dart';

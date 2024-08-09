@@ -1,4 +1,4 @@
-class Pdf {
+ class Pdf {
   bool? isAvailable;
 
   Pdf({this.isAvailable});

@@ -1,4 +1,4 @@
-class PanelizationSummary {
+ class PanelizationSummary {
   bool? containsEpubBubbles;
   bool? containsImageBubbles;
 

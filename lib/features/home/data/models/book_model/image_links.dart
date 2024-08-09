@@ -1,4 +1,4 @@
-class ImageLinks {
+ class ImageLinks {
   String? smallThumbnail;
   String? thumbnail;
 

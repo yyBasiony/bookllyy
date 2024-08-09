@@ -1,4 +1,4 @@
-class ReadingModes {
+ class ReadingModes {
   bool? text;
   bool? image;
 

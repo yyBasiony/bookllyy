@@ -1,4 +1,4 @@
-class IndustryIdentifier {
+ class IndustryIdentifier {
   String? type;
   String? identifier;
 

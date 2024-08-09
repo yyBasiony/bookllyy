@@ -1,4 +1,4 @@
-class SearchInfo {
+ class SearchInfo {
   String? textSnippet;
 
   SearchInfo({this.textSnippet});
